@@ -12,7 +12,7 @@ export default function NavBar(props) {
         <div className="w-fit h-auto bg-[#4A4E69] flex">
             {props.filterData.map(element => (
                 <div 
-                    className={`border-2 cursor-pointer bg-[#22223B] m-2 p-2 rounded-md hover:bg-[#2b3156] duration-500 text-white ${element.id === selectedId ? 'border-white' : 'border-[#22223B]'}`}
+                    className={`border-2 cursor-pointer bg-red-200 m-2 p-2 rounded-md hover:bg-[#2b3156] duration-500 text-white ${element.id === selectedId ? 'border-white' : 'border-[#22223B]'}`}
                     key={element.id} 
                     onClick={() => handleClick(element.id, element.title)}
                 >
